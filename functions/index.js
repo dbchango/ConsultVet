@@ -4,7 +4,11 @@ const app = express();
 const admin = require('firebase-admin');
 
 admin.initializeApp({
+<<<<<<< HEAD
   credential: admin.credential.cert.require("../serviceAccountKey.json"),
+=======
+  credential: admin.credential.cert(serviceAccount),
+>>>>>>> b4f64eb93353a56eabadfae1d6fdc320861a8b78
   databaseURL: "https://desarrolloweb7828rtdb.firebaseio.com"
 });
 
